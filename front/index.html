@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Гороскопы — Главная</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fafafa;
+      color: #333;
+    }
+    header {
+      background: #5b4b8a;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background: #eee;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    .hero {
+      padding: 60px 20px;
+      text-align: center;
+      background: #e5dbff;
+    }
+    .hero h1 {
+      margin-bottom: 10px;
+      font-size: 2rem;
+    }
+    .signs-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 20px;
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .sign-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    .sign-card:hover {
+      transform: translateY(-5px);
+    }
+    footer {
+      padding: 20px;
+      background: #5b4b8a;
+      color: #fff;
+      text-align: center;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Гороскопы и астрология</h1>
+    <p>Ваш путь к звёздам начинается здесь</p>
+  </header>
+
+  <nav>
+    <a href="#">Сегодня</a>
+    <a href="#">На неделю</a>
+    <a href="#">На месяц</a>
+    <a href="#">Совместимость</a>
+    <a href="#">Статьи</a>
+  </nav>
+
+  <section class="hero">
+    <h1>Персональный гороскоп</h1>
+    <p>Выберите свой знак зодиака и узнайте, что подготовили планеты.</p>
+  </section>
+
+  <section class="signs-grid">
+    <div class="sign-card">Овен</div>
+    <div class="sign-card">Телец</div>
+    <div class="sign-card">Близнецы</div>
+    <div class="sign-card">Рак</div>
+    <div class="sign-card">Лев</div>
+    <div class="sign-card">Дева</div>
+    <div class="sign-card">Весы</div>
+    <div class="sign-card">Скорпион</div>
+    <div class="sign-card">Стрелец</div>
+    <div class="sign-card">Козерог</div>
+    <div class="sign-card">Водолей</div>
+    <div class="sign-card">Рыбы</div>
+  </section>
+
+  <footer>
+    &copy; 2025 Гороскопы. Все права защищены.
+  </footer>
+</body>
+</html>
